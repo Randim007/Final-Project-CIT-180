@@ -1,0 +1,194 @@
+﻿
+* {
+    box-sizing:border-box;
+}
+.responsive {
+    width: 100%;
+    height: auto;
+    position:absolute;
+    float: top;
+    float: left;
+    margin-top: 20px;
+  }
+body{
+    background-color:white;
+    font:12pt Verdana, Arila, Georgia, sans-serif;
+    display:inline-flex;
+	overflow:auto;
+    background-size:250px 230px;	
+    }
+    main{
+        width:70%;
+        border:groove whitesmoke 30px;
+    }
+    header{
+        width:98%;
+        background-color:black;
+        padding:1%;
+        margin-top:0%;
+    }
+    footer{
+        width:98%;
+        text-align:center;
+        padding:1%;
+        font-size:.75em;
+    }
+     h1, h2, summary, p, li{
+        
+        flex:1;
+	background-color:silver;
+	opacity:0.9;
+	padding:1%;
+	min-width:250px;
+	border:5px groove white;
+	border-radius:25px;
+    margin: 3%;
+    }
+    aside{
+        width:30%;
+        float:right;
+        overflow:auto;
+        border:inset 10px whitesmoke;
+        padding:10px;
+        background-color:black;
+        font-size:12pt;
+    }
+    h1{
+        color: black;
+        text-shadow: 2px 2px 2px whitesmoke;
+        font-family: "Brush Script MT", cursive;
+        font-size: 3em;
+        text-align: center;
+    }
+    h2{
+        color: black;
+        text-shadow: -1px 0 whitesmoke, 0 1px whitesmoke, 1px 0 whitesmoke, 0 -1px whitesmoke;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-bottom: 15px white;
+        letter-spacing: 8px;
+    }
+    summary{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.25em;
+        font-style: italic;
+        border-radius:25px;
+        color: orangered;
+    }
+    details {
+        color:orangered;
+        border-radius:25px;
+    }
+    ol,ul,dl{
+        line-height: 25pt;
+    }
+nav {
+    margin-top:12px;
+    margin-right:18px;
+}
+nav a {
+    text-decoration:none;
+}
+nav ul{
+    list-style-type:none;
+    margin:12px 0px 0px 0px;
+    padding:0px;
+    }
+nav ul li{
+    border-bottom:2px solid black;
+    }
+nav ul li a:link, nav ul li a:visited {
+    font-weight:bold;
+    display:block;
+    padding:3px 0px 3px 3px;
+    border-radius:25px;
+    background-color:orangered;
+    color:white;
+    }
+nav ul li a:hover, nav ul li a:active{
+    font-weight:bold;
+    display:block;
+    padding:3px 0px 3px 3px;
+    background-color:navajowhite;
+    border-radius:25px;
+    color:orangered;
+    }
+    nav ul ul{
+        margin:0px;
+        text-indent:20px;
+    }
+    h2:hover, summary:hover, p:hover, li:hover,h1:hover{
+        animation:wigglewigglerock 1s infinite;
+    }
+    @keyframes wigglewigglerock{
+        0% {transform:rotate(10deg);}
+        50% {transform:rotate(-10deg);}
+        100% {transform:rotate(10deg);}
+    }
+    nav ul ul li a:link, nav ul ul li a:visited {
+        font-size:10pt;
+        font-weight:bold;
+        display:block;
+        padding:3px 0px 3px 3px;
+        border-radius:25px;
+        background-color:orangered;
+        color:white;
+    }
+    nav ul ul li a:hover, nav ul ul li a:active{
+        font-size:10pt;
+        font-weight:bold;
+        display:block;
+        padding:3px 0px 3px 3px;
+        background-color:white;
+        border-radius:25px;
+        color:orangered;
+    }
+    footer{
+        margin-top:5%;
+    }
+    .icon-bar {
+        width: 100%; /* Full-width */
+        background-color: silver;
+        overflow: auto; /* Overflow due to float */
+        border-radius:25px;
+    }
+    
+    .icon-bar a {
+        float: left; /* Float links side by side */
+        text-align: center; /* Center-align text */
+        width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+        padding: 12px 0; /* Some top and bottom padding */
+        transition: all 0.3s ease; /* Add transition for hover effects */
+        color: white; /* White text color */
+        font-size: 36px; /* Increased font size */
+    }
+    
+    .icon-bar a:hover {
+        background-color: #000; /* Add a hover color */
+    }
+section{
+    height:400px;
+    padding-left: 15%;
+}
+section a:link {
+    text-decoration:none;
+    font-weight:bold;
+    color:black;
+    }
+    [class*="col-"] {
+        float: left;
+        padding: 15px;
+    }
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+   
+    
